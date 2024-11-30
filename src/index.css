@@ -1,0 +1,49 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+:root {
+	/* Cores principais */
+	--color-primary: #4caf50; /* Verde Esmeralda */
+	--color-secondary: #34495e; /* Azul Petróleo */
+	--color-accent: #a2d9b1; /* Verde Oliva Claro */
+	--color-highlight: #e67e22; /* Laranja Queimado */
+
+	/* Fundo */
+	--color-background: #121212; /* Preto Suave */
+	--color-background-secondary: #1e272e; /* Cinza Escuro */
+	--color-background-gradient: linear-gradient(180deg, #121212, #1e272e);
+
+	/* Texto */
+	--color-text-primary: #f1f1f1; /* Branco Gelo */
+	--color-text-secondary: #a2d9b1; /* Verde Oliva Claro */
+
+	/* Bordas e Divisores */
+	--color-border: #34495e;
+
+	/* Hovers e efeitos */
+	--color-hover: #3e8e41; /* Tom mais escuro do verde */
+	--color-hover-secondary: #2d3e50; /* Azul petróleo escurecido */
+
+	/* Sombras */
+	--color-shadow: rgba(0, 0, 0, 0.3); /* Sombra para profundidade */
+
+	--horizontal-padding: 16px;
+	--vertical-padding: 64px;
+}
+
+html,
+body {
+	background: var(--color-background-gradient);
+	background-repeat: no-repeat;
+	color: var(--color-text-primary);
+	font-size: 1rem;
+}
+
+@media (min-width: 1024px) {
+	:root {
+		--horizontal-padding: 256px;
+	}
+}
