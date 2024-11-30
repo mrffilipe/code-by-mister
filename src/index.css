@@ -32,8 +32,8 @@
 	/* Sombras */
 	--color-shadow: rgba(0, 0, 0, 0.3); /* Sombra para profundidade */
 
+	--vertical-padding: 96px;
 	--horizontal-padding: 16px;
-	--vertical-padding: 64px;
 }
 
 html,
