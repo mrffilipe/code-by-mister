@@ -1,3 +1,5 @@
+@import url("fonts.css");
+
 * {
 	margin: 0;
 	padding: 0;
@@ -36,10 +38,38 @@
 
 html,
 body {
+	min-height: 100vh;
 	background: var(--color-background-gradient);
 	background-repeat: no-repeat;
 	color: var(--color-text-primary);
 	font-size: 1rem;
+}
+
+h1,
+h2,
+h3,
+h4 {
+	font-family: "Raleway", sans-serif;
+	font-weight: 700;
+}
+
+h5,
+h6 {
+	font-family: "Raleway", sans-serif;
+	font-weight: 400;
+}
+
+body,
+p,
+span,
+li {
+	font-family: "Poppins", sans-serif;
+	font-weight: 400;
+}
+
+strong {
+	font-family: "Poppins", sans-serif;
+	font-weight: 500;
 }
 
 @media (min-width: 1024px) {

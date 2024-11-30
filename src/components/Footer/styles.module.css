@@ -1,0 +1,10 @@
+.footer {
+	background-color: var(--color-background);
+	padding: 32px var(--horizontal-padding);
+	color: var(--color-text-primary);
+	border-top: 1px solid var(--color-border);
+}
+
+.footer p {
+	text-align: center;
+}

@@ -1,0 +1,10 @@
+.header {
+	background-color: var(--color-background-secondary);
+	padding: 16px var(--horizontal-padding);
+	color: var(--color-text-primary);
+	box-shadow: 0 2px 4px var(--color-shadow);
+}
+
+.header h3 {
+	text-transform: uppercase;
+}
