@@ -1,5 +1,6 @@
 import About from "./components/About";
 import Certificates from "./components/Certificates";
+import Experience from "./components/Experience";
 import Footer from "./components/Footer";
 import Header from "./components/Header";
 import Home from "./components/Home";
@@ -13,6 +14,7 @@ const App = () => {
 			<About />
 			<Projects />
 			<Certificates />
+			<Experience />
 			<Footer />
 		</>
 	);
