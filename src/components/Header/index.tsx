@@ -24,15 +24,24 @@ const Header = () => {
 					<h2>Portifolio</h2>
 					{/* <img src={LogoImg} alt="Logo" /> */}
 				</div>
-				<button className={styles.menu_button} onClick={toggleMenu}>
+				<button
+					className={styles.menu_button}
+					type="button"
+					onClick={toggleMenu}
+				>
 					☰
 				</button>
+				{/* biome-ignore lint/a11y/useKeyWithClickEvents: <explanation> */}
 				<div
 					className={`${styles.overlay} ${isMenuOpen ? styles.visible : ""}`}
 					onClick={toggleMenu}
-				></div>
+				/>
 				<nav className={`${styles.nav} ${isMenuOpen ? styles.open : ""}`}>
-					<button className={styles.close_button} onClick={toggleMenu}>
+					<button
+						className={styles.close_button}
+						type="button"
+						onClick={toggleMenu}
+					>
 						X
 					</button>
 					<ul className={styles.menu_list}>
