@@ -1,16 +1,16 @@
 .header {
 	position: relative;
-	background-color: var(--color-background-secondary);
-	color: var(--color-text-primary);
+	background: var(--color-background-secondary);
 	padding: 8px var(--horizontal-padding);
+	color: var(--color-text-primary);
 }
 
 .container {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	max-width: 1200px;
 	margin: 0 auto;
+	max-width: 1200px;
 }
 
 .logo {
@@ -27,9 +27,13 @@
 .menu_button {
 	background: none;
 	border: none;
-	font-size: 32px;
+	padding: 4px;
 	color: var(--color-text-primary);
 	cursor: pointer;
+}
+
+.menu_button svg {
+	font-size: 2rem;
 }
 
 .overlay {
@@ -70,13 +74,17 @@
 .close_button {
 	background: none;
 	border: none;
-	font-size: 36px;
+	padding: 4px;
 	color: var(--color-text-primary);
 	position: absolute;
 	top: 20px;
 	left: 20px;
 	cursor: pointer;
 	display: none;
+}
+
+.close_button svg {
+	font-size: 2rem;
 }
 
 .nav.open .close_button {
@@ -93,14 +101,24 @@
 .menu_list a {
 	text-decoration: none;
 	color: var(--color-text-primary);
-	font-size: 1.1rem;
-	text-transform: uppercase;
 	transition: all 0.3s ease;
 }
 
 .menu_list a:hover {
-	color: var(--color-text-secondary);
-	text-decoration: underline;
+	color: var(--color-primary);
+}
+
+.social_media {
+	margin-top: 16px;
+	justify-content: flex-start;
+}
+
+.social_media a {
+	padding: 0;
+}
+
+.social_media a svg {
+	font-size: 1.5rem;
 }
 
 @media (min-width: 768px) {
@@ -141,12 +159,22 @@
 
 	.menu_list {
 		flex-direction: row;
+		align-items: center;
 		gap: 24px;
+	}
+
+	.social_media {
+		margin: 0;
+		margin-left: 32px;
 	}
 }
 
 @media (min-width: 1024px) {
 	.logo img {
 		height: 72px;
+	}
+
+	.social_media a {
+		padding: 4px;
 	}
 }

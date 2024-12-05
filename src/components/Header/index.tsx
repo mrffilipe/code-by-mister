@@ -1,6 +1,9 @@
+import { Close, Menu } from "@mui/icons-material";
+import { useState } from "react";
+
 import styles from "./styles.module.css";
 
-import { useState } from "react";
+import SocialMedia from "../SocialMedia";
 
 // import LogoImg from "../../assets/img/logo.png";
 
@@ -29,7 +32,7 @@ const Header = () => {
 					type="button"
 					onClick={toggleMenu}
 				>
-					☰
+					<Menu />
 				</button>
 				{/* biome-ignore lint/a11y/useKeyWithClickEvents: <explanation> */}
 				<div
@@ -42,27 +45,28 @@ const Header = () => {
 						type="button"
 						onClick={toggleMenu}
 					>
-						X
+						<Close />
 					</button>
 					<ul className={styles.menu_list}>
 						<li>
-							<a href="#intro">Início</a>
+							<a href="#home">Início</a>
 						</li>
 						<li>
-							<a href="#about">Sobre</a>
+							<a href="#about">Sobre mim</a>
 						</li>
 						<li>
-							<a href="#services">Serviços</a>
+							<a href="#projects">Projetos</a>
 						</li>
 						<li>
-							<a href="#consulting">Consultorias</a>
+							<a href="#certificates">Certificados</a>
 						</li>
 						<li>
-							<a href="#testimonial">Depoimentos</a>
+							<a href="#experience">Experiência</a>
 						</li>
 						<li>
 							<a href="#contact">Contato</a>
 						</li>
+						<SocialMedia className={styles.social_media} />
 					</ul>
 				</nav>
 			</div>
