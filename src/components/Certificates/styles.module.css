@@ -1,22 +1,22 @@
 .certificates {
-	padding: var(--vertical-padding) var(--horizontal-padding);
 	background: var(--color-background);
+	padding: var(--vertical-padding) var(--horizontal-padding);
 }
 
 .container {
 	max-width: 1200px;
 	margin: 0 auto;
+	text-align: center;
 }
 
 .title {
 	color: var(--color-primary);
-	font-size: 1.8rem;
-	text-align: center;
+	font-size: 2rem;
 	text-transform: uppercase;
-	margin-bottom: 32px;
 }
 
 .grid {
+	margin-top: 32px;
 	display: grid;
 	grid-template-columns: 1fr;
 	gap: 16px;
@@ -26,18 +26,17 @@
 	background: var(--color-background-secondary);
 	padding: 16px;
 	border-radius: 8px;
-	text-align: center;
 	box-shadow: 0px 4px 6px var(--color-shadow);
-	transition: transform 0.3s ease, box-shadow 0.3s ease;
+	transition: all 0.3s ease;
 }
 
 .card:hover {
-	transform: translateY(-4px);
+	transform: translateY(-5px);
 	box-shadow: 0px 6px 8px var(--color-shadow);
 }
 
 .card_title {
-	font-size: 1.2rem;
+	font-size: 1.1rem;
 	color: var(--color-primary);
 }
 
@@ -48,7 +47,7 @@
 
 .card_date {
 	margin-top: 4px;
-	font-size: 0.8rem;
+	font-size: 0.9rem;
 	color: var(--color-text-secondary);
 }
 
@@ -58,7 +57,6 @@
 	padding: 8px 24px;
 	border-radius: 4px;
 	color: var(--color-primary);
-	font-size: 1rem;
 	text-decoration: none;
 	text-transform: uppercase;
 	border: 1px solid var(--color-primary);
@@ -76,7 +74,7 @@
 	}
 
 	.card {
-		padding: 24px;
+		padding: 20px;
 	}
 }
 
