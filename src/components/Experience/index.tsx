@@ -1,7 +1,5 @@
 import styles from "./styles.module.css";
 
-import Separator from "../Separator";
-
 const experiences = [
 	{
 		company: "TechCorp",

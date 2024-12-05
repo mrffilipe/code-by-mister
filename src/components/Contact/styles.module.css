@@ -29,17 +29,12 @@
 
 .social_media {
 	margin-top: 16px;
-	display: inline-block;
-	padding: 4px;
-	color: var(--color-primary);
-	transition: all 0.3s ease;
 }
 
-.social_media:hover {
-	color: var(--color-text-secondary);
+.social_media a:hover {
 	transform: translateY(-5px);
 }
 
-.social_media svg {
+.social_media a svg {
 	font-size: 2rem;
 }

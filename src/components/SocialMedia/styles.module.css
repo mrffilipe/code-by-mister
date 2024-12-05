@@ -1,0 +1,21 @@
+.social_media {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 8px;
+}
+
+.social_media a {
+	display: inline-block;
+	padding: 4px;
+	color: var(--color-primary);
+	transition: all 0.3s ease;
+}
+
+.social_media a:hover {
+	color: var(--color-text-secondary);
+}
+
+.social_media svg {
+	font-size: 1rem;
+}
