@@ -1,3 +1,5 @@
+import { GitHub, Instagram, LinkedIn } from "@mui/icons-material";
+
 import styles from "./styles.module.css";
 
 const Contact = () => {
@@ -10,84 +12,18 @@ const Contact = () => {
 					pelas redes sociais.
 				</p>
 				<div className={styles.content}>
-					<div className={styles.info}>
-						<h3 className={styles.info_title}>Minhas Redes</h3>
-						<a
-							className={styles.email}
-							href="mailto:seuemail@exemplo.com"
-							target="_blank"
-							rel="noopener noreferrer"
-						>
-							seuemail@exemplo.com
-						</a>
-						<ul className={styles.links}>
-							<li>
-								<a
-									href="https://linkedin.com/in/seuperfil"
-									target="_blank"
-									rel="noopener noreferrer"
-									className={styles.link}
-								>
-									LinkedIn
-								</a>
-							</li>
-							<li>
-								<a
-									href="https://instagram.com/seuperfil"
-									target="_blank"
-									rel="noopener noreferrer"
-									className={styles.link}
-								>
-									Instagram
-								</a>
-							</li>
-							<li>
-								<a
-									href="https://wa.me/seunumero"
-									target="_blank"
-									rel="noopener noreferrer"
-									className={styles.link}
-								>
-									WhatsApp
-								</a>
-							</li>
-						</ul>
-					</div>
-					<form className={styles.form}>
-						<label>
-							Nome
-							<input
-								type="text"
-								id="name"
-								name="name"
-								placeholder="Seu nome"
-								required
-							/>
-						</label>
-						<label>
-							Email
-							<input
-								type="email"
-								id="email"
-								name="email"
-								placeholder="seuemail@exemplo.com"
-								required
-							/>
-						</label>
-						<label>
-							Mensagem
-							<textarea
-								id="message"
-								name="message"
-								rows={4}
-								placeholder="Sua mensagem"
-								required
-							/>
-						</label>
-						<button type="submit" className={styles.button}>
-							Enviar
-						</button>
-					</form>
+					{/* biome-ignore lint/a11y/useValidAnchor: <explanation> */}
+					<a className={styles.social_media} href="#">
+						<LinkedIn />
+					</a>
+					{/* biome-ignore lint/a11y/useValidAnchor: <explanation> */}
+					<a className={styles.social_media} href="#">
+						<GitHub />
+					</a>
+					{/* biome-ignore lint/a11y/useValidAnchor: <explanation> */}
+					<a className={styles.social_media} href="#">
+						<Instagram />
+					</a>
 				</div>
 			</div>
 		</section>

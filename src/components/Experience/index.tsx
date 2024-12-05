@@ -49,18 +49,15 @@ const Experience = () => {
 	));
 
 	return (
-		<>
-			<section id="experience" className={styles.experience}>
-				<div className={styles.container}>
-					<h2 className={styles.title}>Experiência Profissional</h2>
-					<div className={styles.timeline}>
-						<div className={styles.vertical_line} />
-						{listOfExperiencies}
-					</div>
+		<section id="experience" className={styles.experience}>
+			<div className={styles.container}>
+				<h2 className={styles.title}>Experiência Profissional</h2>
+				<div className={styles.timeline}>
+					<div className={styles.vertical_line} />
+					{listOfExperiencies}
 				</div>
-			</section>
-			<Separator />
-		</>
+			</div>
+		</section>
 	);
 };
 

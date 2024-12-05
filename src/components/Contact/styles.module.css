@@ -6,135 +6,40 @@
 .container {
 	max-width: 1200px;
 	margin: 0 auto;
+	text-align: center;
 }
 
 .title {
 	color: var(--color-primary);
-	font-size: 1.8rem;
-	text-align: center;
+	font-size: 2rem;
 	text-transform: uppercase;
 }
 
 .subtitle {
 	margin-top: 16px;
 	color: var(--color-text-secondary);
-	text-align: center;
 }
 
 .content {
-	margin-top: 32px;
 	display: flex;
-	flex-direction: column;
-	gap: 32px;
+	justify-content: center;
+	align-items: center;
+	gap: 8px;
 }
 
-.info {
-	text-align: center;
-}
-
-.info_title {
-	font-size: 1.4rem;
+.social_media {
+	margin-top: 16px;
+	display: inline-block;
+	padding: 4px;
 	color: var(--color-primary);
-	margin-bottom: 16px;
-}
-
-.email {
-	color: var(--color-text-secondary);
-	font-size: 1rem;
-	text-decoration: none;
 	transition: all 0.3s ease;
 }
 
-.email:hover {
-	text-decoration: underline;
-}
-
-.links {
-	margin-top: 8px;
-	display: flex;
-	justify-content: center;
-	gap: 8px;
-	list-style: none;
-}
-
-.link {
-	display: block;
+.social_media:hover {
 	color: var(--color-text-secondary);
-	text-decoration: none;
-	font-size: 1rem;
-	transition: transform 0.3s ease;
-}
-
-.link:hover {
 	transform: translateY(-5px);
 }
 
-.form {
-	margin-top: 16px;
-	display: flex;
-	flex-direction: column;
-	gap: 8px;
-	background: var(--color-background);
-	padding: 24px;
-	border-radius: 8px;
-	box-shadow: 0px 4px 6px var(--color-shadow);
-}
-
-.form label {
-	color: var(--color-text-primary);
-	font-size: 1rem;
-}
-
-.form input,
-.form textarea {
-	margin-top: 4px;
-	display: block;
-	width: 100%;
-	padding: 12px;
-	font-size: 1rem;
-	border: 2px solid var(--color-border);
-	border-radius: 4px;
-	background: var(--color-background-secondary);
-	color: var(--color-text-primary);
-	transition: border-color 0.3s ease;
-}
-
-.form input:focus,
-.form textarea:focus {
-	border-color: var(--color-primary);
-	outline: none;
-}
-
-.button {
-	margin-top: 16px;
-	background: var(--color-primary);
-	border: none;
-	border-radius: 4px;
-	padding: 12px 36px;
-	color: var(--color-text-primary);
-	font-size: 1rem;
-	cursor: pointer;
-	text-transform: uppercase;
-	transition: background 0.3s ease;
-}
-
-.button:hover {
-	background: var(--color-hover);
-}
-
-@media (min-width: 768px) {
-	.content {
-		flex-direction: row;
-		justify-content: space-between;
-	}
-
-	.info {
-		flex: 1;
-	}
-
-	.form {
-		flex: 1;
-		margin-top: 0;
-		max-width: 500px;
-	}
+.social_media svg {
+	font-size: 2rem;
 }
