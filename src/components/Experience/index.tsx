@@ -1,5 +1,7 @@
 import styles from "./styles.module.css";
 
+import Separator from "../Separator";
+
 const experiences = [
 	{
 		company: "TechCorp",
@@ -47,15 +49,18 @@ const Experience = () => {
 	));
 
 	return (
-		<section id="experience" className={styles.experience}>
-			<div className={styles.container}>
-				<h2 className={styles.title}>Experiência Profissional</h2>
-				<div className={styles.timeline}>
-					<div className={styles.vertical_line} />
-					{listOfExperiencies}
+		<>
+			<section id="experience" className={styles.experience}>
+				<div className={styles.container}>
+					<h2 className={styles.title}>Experiência Profissional</h2>
+					<div className={styles.timeline}>
+						<div className={styles.vertical_line} />
+						{listOfExperiencies}
+					</div>
 				</div>
-			</div>
-		</section>
+			</section>
+			<Separator />
+		</>
 	);
 };
 

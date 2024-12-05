@@ -1,0 +1,9 @@
+.separator {
+	width: 100%;
+	height: 100px;
+	background: linear-gradient(
+		180deg,
+		var(--color-background-secondary),
+		var(--color-background)
+	);
+}

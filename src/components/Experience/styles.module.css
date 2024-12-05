@@ -1,4 +1,5 @@
 .experience {
+	background: var(--color-background-gradient);
 	padding: var(--vertical-padding) var(--horizontal-padding);
 }
 

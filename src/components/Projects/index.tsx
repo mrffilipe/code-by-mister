@@ -1,5 +1,7 @@
 import styles from "./styles.module.css";
 
+import Separator from "../Separator";
+
 const projects = [
 	{
 		id: 1,
@@ -94,12 +96,15 @@ const Projects = () => {
 	));
 
 	return (
-		<section id="projects" className={styles.projects}>
-			<div className={styles.container}>
-				<h2 className={styles.title}>Projetos</h2>
-				<div className={styles.grid}>{projectList}</div>
-			</div>
-		</section>
+		<>
+			<section id="projects" className={styles.projects}>
+				<div className={styles.container}>
+					<h2 className={styles.title}>Projetos</h2>
+					<div className={styles.grid}>{projectList}</div>
+				</div>
+			</section>
+			<Separator />
+		</>
 	);
 };
 

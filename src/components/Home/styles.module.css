@@ -1,14 +1,32 @@
 .home {
-	text-align: center;
-	padding: var(--vertical-padding) var(--horizontal-padding);
+	position: relative;
+	background: var(--color-background-gradient);
+	padding: 128px var(--horizontal-padding);
+	z-index: 1;
+}
+
+.home::after {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: url("../../assets/svg/background-animation.svg") no-repeat center
+		center;
+	background-size: cover;
+	z-index: -1;
 }
 
 .container {
 	margin: 0 auto;
+	max-width: 1200px;
+	color: var(--color-text-primary);
+	text-align: center;
 }
 
 .title {
-	font-size: 2rem;
+	font-size: 2.5rem;
 }
 
 .highlight {
@@ -17,7 +35,22 @@
 
 .subtitle {
 	margin-top: 8px;
-	font-size: 1.2rem;
+	font-size: 1.25rem;
+}
+
+@keyframes slideIn {
+	from {
+		opacity: 0;
+		transform: translateY(20px);
+	}
+	to {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
+.slideIn {
+	animation: slideIn 0.8s ease-out;
 }
 
 .buttons {
@@ -29,17 +62,19 @@
 }
 
 .btn {
-	display: block;
 	padding: 12px 36px;
 	background: none;
 	border: none;
 	border-radius: 4px;
 	color: var(--color-text-primary);
-	font-size: 1rem;
 	text-transform: uppercase;
 	text-decoration: none;
 	cursor: pointer;
 	transition: all 0.3s ease;
+}
+
+.btn:hover {
+	transform: scale(1.05);
 }
 
 .btn_primary {
@@ -47,22 +82,17 @@
 	color: var(--color-text-primary);
 }
 
-.btn_primary:hover {
-	background: var(--color-hover);
-}
-
 .btn_secondary {
-	background: transparent;
+	backdrop-filter: blur(5px);
 	color: var(--color-primary);
 	border: 2px solid var(--color-primary);
 }
 
-.btn_secondary:hover {
-	background: var(--color-primary);
-	color: var(--color-text-primary);
-}
-
 @media (min-width: 768px) {
+	.home {
+		padding: 192px var(--horizontal-padding);
+	}
+
 	.buttons {
 		flex-direction: row;
 	}

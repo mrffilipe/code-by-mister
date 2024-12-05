@@ -16,7 +16,8 @@
 	/* Fundo */
 	--color-background: #121212; /* Preto Suave */
 	--color-background-secondary: #1e272e; /* Cinza Escuro */
-	--color-background-gradient: linear-gradient(180deg, #121212, #1e272e);
+	--color-background-gradient: linear-gradient(180deg, #121212, #1e272e)
+		no-repeat;
 
 	/* Texto */
 	--color-text-primary: #f1f1f1; /* Branco Gelo */
@@ -39,8 +40,6 @@
 html,
 body {
 	min-height: 100vh;
-	background: var(--color-background-gradient);
-	background-repeat: no-repeat;
 	color: var(--color-text-primary);
 	font-size: 1rem;
 }
@@ -72,8 +71,8 @@ strong {
 	font-weight: 500;
 }
 
-@media (min-width: 1024px) {
-	:root {
-		--horizontal-padding: 256px;
-	}
+button {
+	font-family: "Poppins", sans-serif;
+	font-size: 1rem;
+	font-weight: 500;
 }
