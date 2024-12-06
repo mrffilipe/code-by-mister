@@ -9,16 +9,21 @@ type Props = {
 const SocialMedia = ({ className }: Props) => {
 	return (
 		<div className={`${styles.social_media} ${className}`}>
-			{/* biome-ignore lint/a11y/useValidAnchor: <explanation> */}
-			<a href="#">
+			<a
+				href="https://www.linkedin.com/in/mrffilipe/?locale=pt_BR"
+				target="_blank"
+				rel="noreferrer"
+			>
 				<LinkedIn />
 			</a>
-			{/* biome-ignore lint/a11y/useValidAnchor: <explanation> */}
-			<a href="#">
+			<a href="https://github.com/mrffilipe" target="_blank" rel="noreferrer">
 				<GitHub />
 			</a>
-			{/* biome-ignore lint/a11y/useValidAnchor: <explanation> */}
-			<a href="#">
+			<a
+				href="https://www.instagram.com/msr.filipe/"
+				target="_blank"
+				rel="noreferrer"
+			>
 				<Instagram />
 			</a>
 		</div>

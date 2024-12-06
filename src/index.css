@@ -44,6 +44,29 @@ body {
 	font-size: 1rem;
 }
 
+html {
+	scrollbar-width: thin;
+	scrollbar-color: var(--color-primary) var(--color-background-secondary);
+}
+
+body::-webkit-scrollbar {
+	width: 10px;
+	height: 10px;
+}
+
+body::-webkit-scrollbar-track {
+	background: var(--color-background-secondary);
+}
+
+body::-webkit-scrollbar-thumb {
+	background: var(--color-primary);
+	border-radius: 10px;
+}
+
+body::-webkit-scrollbar-thumb:hover {
+	background: var(--color-hover);
+}
+
 h1,
 h2,
 h3,

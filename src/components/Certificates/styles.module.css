@@ -45,12 +45,6 @@
 	color: var(--color-text-secondary);
 }
 
-.card_date {
-	margin-top: 4px;
-	font-size: 0.9rem;
-	color: var(--color-text-secondary);
-}
-
 .card_link {
 	margin-top: 16px;
 	display: inline-block;

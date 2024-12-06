@@ -1,7 +1,7 @@
 .home {
 	position: relative;
 	background: var(--color-background-gradient);
-	padding: 128px var(--horizontal-padding);
+	padding: 96px var(--horizontal-padding);
 	z-index: 1;
 }
 
@@ -34,7 +34,9 @@
 }
 
 .subtitle {
+	margin: 0 auto;
 	margin-top: 8px;
+	max-width: 800px;
 	font-size: 1.25rem;
 }
 

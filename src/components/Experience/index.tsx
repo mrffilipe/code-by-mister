@@ -2,20 +2,40 @@ import styles from "./styles.module.css";
 
 const experiences = [
 	{
-		company: "TechCorp",
-		role: "Desenvolvedor Backend",
-		period: "Jan 2022 - Atual",
+		company: "Desenvolvedor Backend",
+		role: "Freelancer",
+		period: "Fev 2021 - Atual",
 		description:
-			"Desenvolvimento e manutenção de APIs RESTful, integração com sistemas de terceiros e otimização de performance.",
-		technologies: ["C#", ".NET Core", "SQL Server", "Azure"],
+			"Como freelancer, aprimorei minhas habilidades em liderança e comunicação, trabalhando com uma ampla gama de tecnologias em projetos diversificados.",
+		technologies: [
+			"C#",
+			".NET Core",
+			"TypeScript",
+			"React",
+			"NextJS",
+			"C/C++",
+			"MySQL",
+			"MongoDB",
+			"GIT",
+			"Docker",
+			"RabbitMQ",
+		],
 	},
 	{
-		company: "Startup XYZ",
-		role: "Engenheiro de Software",
-		period: "Jul 2020 - Dez 2021",
+		company: "Desenvolvedor Autodidata",
+		role: "Autodidata",
+		period: "Abr 2015 - Dez 2020",
 		description:
-			"Desenvolvimento de sistemas web full-stack com foco em escalabilidade e usabilidade.",
-		technologies: ["Node.js", "React", "MongoDB", "AWS"],
+			"Iniciei minha jornada na programação com foco em C# e Unity3D, desenvolvendo jogos e aplicações interativas. Posteriormente, ampliei minha base técnica para o desenvolvimento web, aprendendo HTML, CSS, JavaScript e introduzindo-me ao Node.js.",
+		technologies: [
+			"C#",
+			"Unity3D",
+			"HTML",
+			"CSS",
+			"JavaScript",
+			"Node.js",
+			"PHP",
+		],
 	},
 ];
 
