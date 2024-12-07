@@ -31,6 +31,10 @@
 	margin-top: 16px;
 }
 
+.social_media a {
+	color: var(--color-text-primary);
+}
+
 .social_media a:hover {
 	transform: translateY(-5px);
 }

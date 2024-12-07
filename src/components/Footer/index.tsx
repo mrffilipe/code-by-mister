@@ -1,15 +1,14 @@
-import SocialMedia from "../SocialMedia";
-
 import styles from "./styles.module.css";
+
+import Logo from "../Logo";
+import SocialMedia from "../SocialMedia";
 
 const Footer = () => {
 	return (
 		<footer className={styles.footer}>
 			<div className={styles.container}>
 				<div className={styles.links}>
-					<div className={styles.logo}>
-						<h2>Portifolio</h2>
-					</div>
+					<Logo />
 					<nav className={styles.navigation}>
 						<span>Links úteis</span>
 						<a href="#about" className={styles.link}>

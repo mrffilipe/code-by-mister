@@ -3,9 +3,8 @@ import { useState } from "react";
 
 import styles from "./styles.module.css";
 
+import Logo from "../Logo";
 import SocialMedia from "../SocialMedia";
-
-// import LogoImg from "../../assets/img/logo.png";
 
 const Header = () => {
 	const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -23,10 +22,7 @@ const Header = () => {
 	return (
 		<header className={styles.header}>
 			<div className={styles.container}>
-				<div className={styles.logo}>
-					<h2>Portifolio</h2>
-					{/* <img src={LogoImg} alt="Logo" /> */}
-				</div>
+				<Logo />
 				<button
 					className={styles.menu_button}
 					type="button"
@@ -52,7 +48,7 @@ const Header = () => {
 							<a href="#home">Início</a>
 						</li>
 						<li>
-							<a href="#about">Sobre mim</a>
+							<a href="#about">Sobre</a>
 						</li>
 						<li>
 							<a href="#projects">Projetos</a>
